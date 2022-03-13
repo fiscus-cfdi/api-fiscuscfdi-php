@@ -8,7 +8,7 @@ use FiscusCFDI\ApiFiscusCFDIPHP\General\Peticion;
  */
 class ObtenerToken
 { 
-    public static function getToken($usuario, ·$password)
+    public static function getToken($usuario,$password)
     {
         $url=UrlGeneral::getUrl()."api_obtener_token";
         $parametros=array("usuario"=>$usuario, "password"=>$password);
