@@ -11,4 +11,4 @@ class UrlGeneral
     {
         return "https://fiscuscfdi.com/index.php/Api?peticion=";
     }
-}
+} 
