@@ -12,7 +12,7 @@ class ObtenerToken
     {
         $url=UrlGeneral::getUrl()."api_obtener_token";
         $parametros=array("usuario"=>$usuario, "password"=>$password);
-        $respuesta=Peticion::peticion($url,$parametros,$post=true,$credencial=array());
+        $respuesta=Peticion::peticion($url,$parametros);
         return $respuesta; 
 	}
 }
