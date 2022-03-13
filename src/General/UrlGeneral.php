@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace FiscusCFDI\ApiFiscusCFDIPHP;
+namespace FiscusCFDI\ApiFiscusCFDIPHP\General;
 
 /**
  *
