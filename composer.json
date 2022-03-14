@@ -2,7 +2,7 @@
     "name": "fiscuscfdi/api-fiscuscfdi-php",
     "description": "Librería para consumir la API de fiscuscfdi.com desde PHP.",
     "type": "library",
-    "license": "Apache License 2.0",
+    "license": "Apache-2.0",
     "autoload": {
         "psr-4": {
             "FiscusCFDI\\ApiFiscusCFDIPHP\\": "src/"

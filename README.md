@@ -2,6 +2,18 @@
 # API Fiscus CFDI - PHP
 
 Librería para consumir la API de fiscuscfdi.com (https://fiscuscfdi.com/API_Facturacion/docs) desde PHP.
+## Instalar vía composer
+```composer
+composer require fiscuscfdi/api-fiscuscfdi-php
+```
+## Instalar vía composer - packagist.org
+```composer
+{
+	"require": {
+		"fiscuscfdi/api-fiscuscfdi-php": "^1.0"
+	}
+}
+```
 
 ## Instalar vía composer - Github
 
