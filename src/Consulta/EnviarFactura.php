@@ -15,7 +15,7 @@ class EnviarFactura
             "env"=>$env, 
             "token"=>$token,
             "uuid"=>$uuid,
-            "correo"=>$correo
+            "correo"=>$correo 
         ); 
         $respuesta=Peticion::peticion($url,$parametros);
         $respuesta=json_decode($respuesta,true);

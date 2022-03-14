@@ -19,7 +19,7 @@ class Peticion
 		if($post)
 		{
 			curl_setopt($ch, CURLOPT_POST, TRUE);
-			curl_setopt($ch, CURLOPT_POSTFIELDS, $parametros);
+			curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($parametros));
 		}
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE );
 		$server_output = curl_exec ($ch);
