@@ -8,6 +8,14 @@ use FiscusCFDI\ApiFiscusCFDIPHP\General\Peticion;
  */
 class EnviarFactura
 { 
+    /**
+     * Método para consumir el siguiente endpoint "https://www.fiscuscfdi.com/API_Facturacion/docs/#operation/api_enviar_factura"
+     * @param string $env
+     * @param string $token 
+     * @param string $uuid 
+     * @param array $correo 
+     * @return array 
+    */
     public static function enviar($env,$token, $uuid, $correo=array())
     {   
         $url=UrlGeneral::getUrl()."api_enviar_factura";

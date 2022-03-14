@@ -7,6 +7,10 @@ namespace FiscusCFDI\ApiFiscusCFDIPHP\General;
  */
 class UrlGeneral
 {
+    /**
+     * Método para retornar la url de peticiones de fiscuscfdi.com (API)"
+     * @return string 
+    */
     public static function getUrl()
     {
         return "https://fiscuscfdi.com/index.php/Api?peticion=";

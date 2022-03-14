@@ -8,6 +8,14 @@ use FiscusCFDI\ApiFiscusCFDIPHP\General\Peticion;
  */
 class ObtenerFolio
 { 
+    /**
+     * Método para consumir el siguiente endpoint "https://www.fiscuscfdi.com/API_Facturacion/docs/#operation/api_obtener_folio"
+     * @param string $env
+     * @param string $token  
+     * @param string $rfc 
+     * @param string $serie 
+     * @return array 
+    */
     public static function getFolio($env,$token, $rfc, $serie)
     {   
         $url=UrlGeneral::getUrl()."api_obtener_folio";

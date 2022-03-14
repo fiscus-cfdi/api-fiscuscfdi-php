@@ -7,6 +7,14 @@ namespace FiscusCFDI\ApiFiscusCFDIPHP\General;
  */
 class Peticion
 {
+	/**
+     * Método para realizar las peticiones genéricas hacia la API de fiscuscfdi: "https://fiscuscfdi.com/API_Facturacion/docs/"
+     * @param string $url 
+     * @param array $parametros 
+     * @param bool $post 
+     * @param array $credencial
+     * @return string|bool 
+    */
     public static function peticion($url,$parametros,$post=true,$credencial=array())
     {
         $ch = curl_init();
@@ -26,7 +34,7 @@ class Peticion
         if (!curl_errno($ch)) {
             $info = curl_getinfo($ch);
         }
-		curl_close ($ch);
+		curl_close ($ch); 
 		return $server_output;
 	}
 

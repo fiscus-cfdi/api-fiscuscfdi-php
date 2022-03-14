@@ -8,6 +8,13 @@ use FiscusCFDI\ApiFiscusCFDIPHP\General\Peticion;
  */
 class TimbrarCFDI
 { 
+    /**
+     * Método para consumir el siguiente endpoint "https://fiscuscfdi.com/API_Facturacion/docs/#operation/api_timbrar_cfdi"
+     * @param string $env 
+     * @param string $token 
+     * @param string $cfdi 
+     * @return array 
+    */
     public static function timbrar($env,$token, $cfdi)
     {
         $url=UrlGeneral::getUrl()."api_timbrar_cfdi";
