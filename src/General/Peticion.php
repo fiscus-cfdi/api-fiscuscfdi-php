@@ -10,6 +10,7 @@ class Peticion
     public static function peticion($url,$parametros,$post=true,$credencial=array())
     {
         $ch = curl_init();
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 		if(!empty($credencial))
         {
 			curl_setopt($ch, CURLOPT_USERPWD, $credencial["username"]. ":" . $credencial["password"]);
@@ -24,7 +25,6 @@ class Peticion
 		$server_output = curl_exec ($ch);
         if (!curl_errno($ch)) {
             $info = curl_getinfo($ch);
-            echo json_encode($info);
         }
 		curl_close ($ch);
 		return $server_output;
