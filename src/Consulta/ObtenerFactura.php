@@ -18,7 +18,7 @@ class ObtenerFactura
             "logotipo"=>$logotipo
         ); 
         $respuesta=Peticion::peticion($url,$parametros);
-        $respuesta=json_encode($respuesta);
+        $respuesta=json_decode($respuesta,true);
         return $respuesta;  
 	}
 }
