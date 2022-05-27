@@ -105,6 +105,9 @@ echo  $respuesta;
 $env="sandbox";
 $token="TU_TOKEN";
 $uuid="0D3C8EC0-2D0D-40DF-90F0-605090B590C0";
+$motivo_cancelacion="01";
+$folio_sustitucion="0D3C8EC0-2D0D-40DF-90F0-605090B590C0";  
+
 $respuesta=FiscusCFDI\ApiFiscusCFDIPHP\Timbrar\CancelarCFDI::cancelar($env,$token, $uuid);
 echo  $respuesta;
 ```
