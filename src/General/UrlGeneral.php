@@ -13,6 +13,6 @@ class UrlGeneral
     */
     public static function getUrl()
     {
-        return "https://fiscuscfdi.com/index.php/Api?peticion=";
+        return "https://app.fiscus.mx/index.php/Api?peticion=";
     }
 } 
